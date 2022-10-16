@@ -51,3 +51,33 @@ st.download_button(
 
 st.header('Full dataset')
 st.write(df_main)
+
+st.header("Sources")
+st.write(
+    "**OECD Supply Tables**:" + r"https://stats.oecd.org/Index.aspx?DataSetCode=SNA_TABLE31"
+)
+
+with st.expander("Source description"):
+    st.write("It presents the breakdown of output at basic prices between market output, \\\
+        output for own final use and non-market output, by activty at the 2 digit ISIC Rev 4 level. \\\
+        It has been prepared from statistics reported to the OECD by countries in their answers to \\\
+        Supply and Use questionnaire.")
+
+st.write(
+    "OECD Air Emissions:" + r"https://stats.oecd.org/viewhtml.aspx?datasetcode=AEA&lang=en"
+)
+
+with st.expander("Source description"):
+    st.write("Air Emission Accounts are available for European countries and a few non-European countries. \\\
+        The System of Environmental-Economic Accounting (SEEA) Central Framework is an accounting system developed around two objectives: \\\
+        'understanding the interactions between the economy and the environment' and describing \\\
+        'stocks and changes in stocks of environmental assets'. The SEEA combines national accounts \\\
+        and environmental statistics in a statistical framework with consistent definitions, classifications \\\
+        and concepts allowing policy makers to evaluate environmental pressures from economic activities at macro- and meso-levels.")
+    st.write("Data refer to total emissions of CO2 (CO2 emissions from energy use and industrial processes, e.g. \\\
+        cement production), CH4 (methane emissions from solid waste, livestock, mining of hard coal and lignite, \\\
+        rice paddies, agriculture and leaks from natural gas pipelines), N2O (nitrous oxide), HFCs (hydrofluorocarbons), \\\
+        PFCs (perfluorocarbons), (SF6 +NF3) (sulphur hexafluoride and nitrogen trifluoride), SOx (sulphur oxides, NOx  \\\
+        (nitrogen oxides), CO (carbon monoxide), NMVOC (non-methane volatile organic compounds), PM2.5 (particulates less \\\
+        that 2.5 µm), PM10 (particulates less that 10 µm) and NH3 (ammonia).")
+    st.write("The OECD Air Emission Accounts present data based on ISIC rev. 4.")
