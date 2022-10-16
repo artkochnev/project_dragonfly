@@ -64,7 +64,7 @@ with st.expander("Source description"):
         Supply and Use questionnaire.")
 
 st.write(
-    "OECD Air Emissions:" + r"https://stats.oecd.org/viewhtml.aspx?datasetcode=AEA&lang=en"
+    "**OECD GHG Air Emissions**:" + r"https://stats.oecd.org/viewhtml.aspx?datasetcode=AEA&lang=en"
 )
 
 with st.expander("Source description"):
